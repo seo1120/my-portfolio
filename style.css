@@ -147,14 +147,14 @@ body {
 
 .hero-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     position: relative;
     z-index: 1;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 .hero-text h1 {
