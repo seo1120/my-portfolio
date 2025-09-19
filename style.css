@@ -80,6 +80,21 @@ body {
     color: #fdccff;
 }
 
+.nav-location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: var(--text-light);
+    font-weight: 500;
+    padding: 0;
+}
+
+.nav-location i {
+    color: var(--primary-color);
+    font-size: 0.8rem;
+}
+
 .nav ul {
     display: flex;
     list-style: none;
