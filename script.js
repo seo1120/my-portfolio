@@ -208,7 +208,7 @@ function initTypingEffect() {
     if (!typingElement) return;
     
     const originalText = typingElement.textContent;
-    const typingTexts = [originalText, 'Full-Stack Developer', 'Cloud & DevOps Enthusiast', 'Lifelong Learner'];
+    const typingTexts = [originalText, 'Developer', 'Cloud Enthusiast', 'Lifelong Learner'];
     let currentIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
