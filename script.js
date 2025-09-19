@@ -19,8 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // 5. 타이핑 효과 (선택사항)
     initTypingEffect();
     
-    // 6. 테마 토글 (선택사항)
-    initThemeToggle();
 });
 
 // 부드러운 스크롤 기능
@@ -251,59 +249,6 @@ function initTypingEffect() {
     setTimeout(typeWriter, 3000);
 }
 
-// 다크모드 토글 (선택사항)
-function initThemeToggle() {
-    // 토글 버튼 생성
-    const themeToggle = document.createElement('button');
-    themeToggle.innerHTML = '🌓';
-    themeToggle.className = 'theme-toggle';
-    themeToggle.style.cssText = `
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        border: none;
-        background: var(--primary-color);
-        color: white;
-        font-size: 1.2rem;
-        cursor: pointer;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        z-index: 1000;
-        transition: transform 0.3s ease;
-    `;
-    
-    themeToggle.addEventListener('mouseover', () => {
-        themeToggle.style.transform = 'scale(1.1)';
-    });
-    
-    themeToggle.addEventListener('mouseout', () => {
-        themeToggle.style.transform = 'scale(1)';
-    });
-    
-    document.body.appendChild(themeToggle);
-    
-    // 다크모드 상태 확인
-    let isDarkMode = localStorage.getItem('darkMode') === 'true';
-    
-    // 초기 테마 적용
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-    
-    // 토글 이벤트
-    themeToggle.addEventListener('click', () => {
-        isDarkMode = !isDarkMode;
-        document.body.classList.toggle('dark-mode', isDarkMode);
-        localStorage.setItem('darkMode', isDarkMode);
-        
-        showNotification(
-            isDarkMode ? '다크모드가 활성화되었습니다' : '라이트모드가 활성화되었습니다',
-            'info'
-        );
-    });
-}
 
 // 페이지 로딩 애니메이션
 window.addEventListener('load', function() {
