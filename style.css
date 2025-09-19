@@ -80,7 +80,10 @@ body {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--primary-color);
+    background: rgba(255, 182, 193, 0.4);
+    color: #2d3748;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
 }
 
 .nav ul {
@@ -157,6 +160,14 @@ body {
     gap: 3rem;
 }
 
+.hero-content .social-links {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    gap: 1rem;
+}
+
 .hero-text h1 {
     font-family: 'Playfair Display', serif;
     font-size: 4rem;
@@ -174,8 +185,11 @@ body {
 }
 
 .highlight {
-    color: var(--primary-color);
+    background: rgba(255, 182, 193, 0.4);
+    color: #2d3748;
     font-weight: 500;
+    padding: 0.1rem 0.3rem;
+    border-radius: 4px;
 }
 
 .hero-subtitle {
