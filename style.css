@@ -85,13 +85,13 @@ body {
     align-items: center;
     gap: 0.5rem;
     font-size: 1rem;
-    color: var(--text-light);
+    color: #6b7280;
     font-weight: 500;
     padding: 0;
 }
 
 .nav-location i {
-    color: var(--primary-color);
+    color: #fdccff;
     font-size: 0.8rem;
 }
 
