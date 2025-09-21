@@ -95,6 +95,21 @@ body {
     font-size: 0.8rem;
 }
 
+.nav-views {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: #6b7280;
+    font-weight: 500;
+    padding: 0;
+}
+
+.nav-views i {
+    color: #fdccff;
+    font-size: 0.8rem;
+}
+
 .nav ul {
     display: flex;
     list-style: none;

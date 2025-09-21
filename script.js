@@ -280,3 +280,25 @@ function initScrollProgress() {
 
 // 스크롤 진행도 초기화 (원하는 경우 주석 해제)
 // initScrollProgress();
+
+// Page view counter
+function updatePageViews() {
+    let pageViews = localStorage.getItem('pageViews');
+    if (pageViews) {
+        pageViews = parseInt(pageViews) + 1;
+    } else {
+        pageViews = 1;
+    }
+    localStorage.setItem('pageViews', pageViews);
+    
+    // Update the display
+    const pageViewsElement = document.getElementById('pageViews');
+    if (pageViewsElement) {
+        pageViewsElement.textContent = pageViews.toLocaleString();
+    }
+}
+
+// Initialize page views when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    updatePageViews();
+});
